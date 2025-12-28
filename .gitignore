@@ -1,0 +1,11 @@
+# Python virtual environment
+backend/venv/
+__pycache__/
+*.pyc
+
+# React
+frontend/mcd-frontend/node_modules/
+build/
+
+# macOS
+.DS_Store
