@@ -1,0 +1,115 @@
+.page-container {
+  min-height: calc(100vh - 70px); /* below navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.page-container::before {
+  content: "";
+  background-image: url("./mcd-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 620px;
+  opacity: 0.30; 
+  position: absolute;
+  inset: 0;
+}
+
+.page-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  padding: 20px;
+}
+
+.page-title {
+  color: #eb0b29;
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.page-text {
+  font-size: 18px;
+  color: #222;
+  line-height: 1.6;
+}
+
+.feedback-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.feedback-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.feedback-container h2 {
+  color: #d32f2f; 
+  margin-bottom: 20px;
+}
+
+/* Feedback page background with logo */
+.feedback-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  background-image: url("./mcd-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 450px;
+}
+
+/* Centered feedback container */
+.feedback-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85); /* makes text readable */
+  border-radius: 10px;
+}
+
+/* Heading style */
+.feedback-container h2 {
+  color: #d32f2f; /* McDonald's red */
+  margin-bottom: 20px;
+}
+
+/* McDonald's style buttons */
+button {
+  background-color: #d32f2f; /* McDonald's red */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #b71c1c;
+  transform: scale(1.03);
+}
+
+/* Disabled button */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
